@@ -1,5 +1,7 @@
 package com.example.corejavaexamplewithstreamapi.stream.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
@@ -8,24 +10,41 @@ import java.util.stream.Collectors;
 
 @ToString
 @RequiredArgsConstructor
+@AllArgsConstructor
+@Builder
 public class EmpDto {
-    @ToString.Exclude
-    private final Emp emp;
+
     private String name;
     private Integer id;
 
+    public static List<EmpDto> getEmp (List<Emp> empList) {
+        return empList.stream().map(EmpDto::new).collect(Collectors.toList());
+    }
+
+    @ToString.Exclude
+    private final Emp emp;
 
     public String getName ( ) {
         return this.emp.getName();
     }
 
+    public String getClg ( ) {
+        return this.emp.getClg();
+    }
 
     public Integer getId ( ) {
         return this.emp.getId();
     }
 
+    public void setName (String name) {
+        this.emp.setName(name);
+    }
 
-    public static List<EmpDto> getEmp (List<Emp> empList) {
-        return empList.stream().map(EmpDto::new).collect(Collectors.toList());
+    public void setClg (String clg) {
+        this.emp.setClg(clg);
+    }
+
+    public void setId (Integer id) {
+        this.emp.setId(id);
     }
 }

@@ -28,23 +28,9 @@ public class EmpDto {
         return this.emp.getName();
     }
 
-    public String getClg ( ) {
-        return this.emp.getClg();
-    }
-
     public Integer getId ( ) {
         return this.emp.getId();
     }
 
-    public void setName (String name) {
-        this.emp.setName(name);
-    }
 
-    public void setClg (String clg) {
-        this.emp.setClg(clg);
-    }
-
-    public void setId (Integer id) {
-        this.emp.setId(id);
-    }
 }

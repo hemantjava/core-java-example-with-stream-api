@@ -11,9 +11,9 @@ class CharacterCountTest {
 
     @Test
     void charCount ( ) {
-        final String occurrences = CharacterCount.charCount("occurrences");
-        CharacterCount.charCount1("occurrences");
+        final String occurrences = CharacterCount.charCount1("occurrences");
         CharacterCount.charCount2("occurrences");
+        CharacterCount.charCount3("occurrences");
     }
     
 }

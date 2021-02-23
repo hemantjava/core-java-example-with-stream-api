@@ -39,7 +39,7 @@ public class BinarySearch {
 
 		// termination condition
 		if (lastElement >= firstElement) {
-			int mid = firstElement + (lastElement - firstElement) / 2;
+			int mid = (firstElement + lastElement ) / 2;
 
 			// if the middle element is our goal element, return its index
 			if (arr[mid] == elementToSearch) {

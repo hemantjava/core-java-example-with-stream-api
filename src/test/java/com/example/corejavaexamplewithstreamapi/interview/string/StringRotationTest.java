@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 class StringRotationTest {
 
-  String str1 = "GeeksforGeeks";
+  String str1 = "hemantsahu";
   @Test
   void leftrotate() {
     final String leftrotate = StringRotation.leftrotate(str1, 3);

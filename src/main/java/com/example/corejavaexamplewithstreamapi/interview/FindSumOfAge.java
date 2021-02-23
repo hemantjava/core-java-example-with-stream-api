@@ -17,8 +17,8 @@ public class FindSumOfAge {
 
   }
 
-  public static int getMax(List<Employee> empList) {                               //OptionalInt    int
-    final int asInt = empList.stream().map(Employee::getAge).mapToInt(Integer::intValue).max().getAsInt();
+  public static int getMax(List<Employee> empList) {              //OptionalInt    int
+    final int asInt = empList.stream().map(Employee::getAge).max((a,b)->a).get();
     return asInt;
 
   }

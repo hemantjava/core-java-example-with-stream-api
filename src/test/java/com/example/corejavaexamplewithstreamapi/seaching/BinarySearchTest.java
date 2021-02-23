@@ -20,4 +20,22 @@ class BinarySearchTest {
       System.out.println("Searching element has not been founded");
     }
   }
+
+  @Test
+  void test(){
+    System.out.println(Decimal(1010));
+  }
+  private int Decimal(int binary){
+
+    int temp;
+    int sum = 0;
+    for(int i=0;binary>0;i++){
+      temp = binary%10;
+     // System.out.println(temp);
+      sum = sum+temp *(int)Math.pow(2,i);
+      binary = binary/10;
+
+    }
+    return sum;
+  }
 }

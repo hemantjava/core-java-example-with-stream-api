@@ -3,7 +3,7 @@ package com.example.corejavaexamplewithstreamapi.numbers;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FindDuplicatNumber {
+public class FindDuplicateNumber {
 
 	public static void main(String[] args) {
 		

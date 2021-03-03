@@ -1,18 +1,41 @@
 package com.example.corejavaexamplewithstreamapi.interview.string;
 
 public class StringRotation {
+    public static void main(String[] args) {
 
+    String str = "hemant";
+    System.out.println(str);
 
-    static String leftrotate(String str, int d) {
-        System.out.println(str.substring(d)); //exclude from start(beginIndex) d letter and return rest string
-        System.out.println(str.substring(0, d));//return range of (beginIndex,endingIndex) string -1 index.
+    System.out.println(rightrotate(str,2));
 
-        return str.substring(d) + str.substring(0, d);
+     System.out.println("===============================");
+     System.out.println(leftrotate(str,2));
+}
+
+    public static String rightrotate(String input,int n){
+        StringBuilder sb = new StringBuilder();
+        int size = input.length();
+        if(size<=n){
+
+            return "invalid input";
+        }
+
+        sb.append(input.substring(n));
+        sb.append(input.substring(0,n));
+        return sb.toString();
+
     }
+    public static String leftrotate(String input,int n){
+        StringBuilder sb = new StringBuilder();
+        int size = input.length();
+        if(size<=n){
 
-    // function that rotates s towards right by d
-    static String rightrotate(String str, int d) {
-        return str.substring(str.length()-d)+str.substring(0,str.length()-d);
+            return "invalid input";
+        }
+        sb.append(input.substring(input.length()-n));
+        sb.append(input.substring(0,input.length()-n));
+        return sb.toString();
+
     }
 
 }

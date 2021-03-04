@@ -99,7 +99,13 @@ public class SinglyLL {
         return  -1;
     }
 
-
+    // prints content of double linked list
+    void printList(Node node) {
+        while (node != null) {
+            System.out.print(node.getData() + " ");
+            node = node.getNext();
+        }
+    }
 
     public static void main(String[] args) {
         SinglyLL singlyLL = new SinglyLL();
@@ -123,7 +129,9 @@ public class SinglyLL {
         System.out.println(singlyLL.findData(21));
         System.out.println(singlyLL.findData(20));
         singlyLL.print();
-        singlyLL.reverse();
-        singlyLL.print();
+        Node node = singlyLL.reverse();
+        singlyLL.printList(node);
     }
+
+
 }

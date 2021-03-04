@@ -1,4 +1,4 @@
-package com.example.corejavaexamplewithstreamapi.seaching;
+package com.example.corejavaexamplewithstreamapi.ds.seaching;
 
 public class LinearSearch {
 

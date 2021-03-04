@@ -1,4 +1,4 @@
-package com.example.corejavaexamplewithstreamapi.sorting;
+package com.example.corejavaexamplewithstreamapi.ds.sorting;
 
 public class BubbleSort {
 

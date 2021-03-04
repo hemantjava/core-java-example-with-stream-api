@@ -1,4 +1,4 @@
-package com.example.corejavaexamplewithstreamapi.seaching;
+package com.example.corejavaexamplewithstreamapi.ds.seaching;
 
 //In BinarySearch array should be sorted arrays
 //The time complexity of the binary search algorithm is O(log n).
